@@ -1,0 +1,14 @@
+.theButton {
+    background-color:chartreuse;
+    flex-grow: 4;
+    width:50%;
+}
+
+.theView {
+    border-style: double;
+    display: flex;
+    flex-direction: column;
+/*     justify-content: space-around; */
+    align-content: center;
+    gap: 20px;
+}
