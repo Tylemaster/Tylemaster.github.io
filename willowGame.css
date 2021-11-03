@@ -1,14 +1,75 @@
-.theButton {
-    background-color:chartreuse;
-    flex-grow: 4;
-    width:50%;
+* {
+  box-sizing: border-box; 
 }
 
-.theView {
-    border-style: double;
+
+.thePageView {
     display: flex;
-    flex-direction: column;
-/*     justify-content: space-around; */
-    align-content: center;
-    gap: 20px;
+    min-height: 90vh;
+    flex-direction: row;
+    margin: 0;
 }
+
+.theLeftSide {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  background: #6f57e6;
+    height: 20vh;
+}
+
+h1{
+  color: aliceblue;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.theGameView {
+  background-color:#e6ce57;
+  display: flex;
+  flex-direction: row;
+  flex: 5;
+}
+
+.theText{
+  background-color:#6f57e6;
+  text-align: center;
+  width:20%;
+  margin-top: 5%;
+  border-style: solid;
+  border-color: black;
+  color: aliceblue;
+  padding-top: 1%;
+  margin-left: 20%;
+  block-size: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.theButton {
+  border-style: solid;
+  border-color: black;
+  margin-top: 5%;
+  margin-left: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#e68657;
+  width: 35%;
+  height: 15%;
+}
+
+.theButton:hover {
+  background-color: #f1380a;
+  color: white;
+}
+
+.rightSidebar {
+    background-color: #e68657;
+    flex: 1;
+  }
+
+  .highScores {
+    visibility: hidden;
+    text-align: center;
+  }
